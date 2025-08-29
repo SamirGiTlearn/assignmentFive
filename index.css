@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+    
+    #contact-container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .box-item {
+        grid-template-columns: repeat(9, 1fr);
+    }
+}

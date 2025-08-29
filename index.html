@@ -7,12 +7,20 @@
 
    <!--add tailwind css link-->
        <script src="https://cdn.tailwindcss.com"></script>
+    <!--add font awesome link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+     <link rel="stylesheet" href="index.css">
+
+
 
 
 </head>
 <body>
     <!--create navbar-->
-    <div class="nav-container border border-red-500 border-2 solo w-[1920px] h-[100px] bg-white flex justify-between   ">
+    <div class="nav-container solo w-[1920px] h-[100px] bg-white flex justify-between ">
+
+        
         <div class ="w-[195.72px] h-[50px] ml-[60px] mt-[24px] flex" >
           <img src ="assets/logo.png" alt ="logo" class="w-[50px] h-[50px]">
             <h1>Emergency<br>Service</h1>
@@ -32,13 +40,15 @@
                 <p class="w-[55px] h-[24px] text-white font-semibold "><span>2 </span>copy</p>
                 
             </div>
+    
+           
             
         </div>
     </div>
 
      <!--create hero section-->
      
-    <div class="border border-red-500 border-2 pt-4 w-[1920px] h-[239px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+    <div class=" pt-4 w-[1920px] h-[239px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
        <div class=" flex justify-center  items-center ">
               <img src ="assets/logo-dark.png" class="w-[92px] h-[92px] ">
        </div>
@@ -58,181 +68,513 @@
 
      <main>
 
-        <!--<div class="border border-red-500 border-2 w-[1920px]  h-[1260px] bg-white  ">-->
-            <section id="contact-container" class="border border-red-500 border-2 bg-white w-[1800px] h-[1140px] 
-                                                   grid grid-cols-12 gap-2 mt-12 ml-9 mb-12" >
-                
-                <section id="card-item" class=" border-blue-500 border-2 col-span-9  ">
-                    <div class="box-item ">
-                         <div class="border border-red-500 border-2 w-[436.67px] h-[360px] bg-white rounded-2xl shadow-lg">
-                        <!-- Emergency Icon -->
-                        <div class="border border-red-500 border-2 flex justify-between mx-auto mt-7  w-[372.67px] h-[60px]">
-                             <div class="bg-[#FFE3E2] w-[60px] h-[60px] rounded-xl flex justify-center items-center">
-                                <img src="assets/emergency.png" alt="Emergency light icon " class=" w-[32px] h-[32px]" />
-                                </div>
-                           <img src="assets/heart.png" alt="Emergency light icon " class=" w-[30px] h-[30px] mt-4" />
-                        </div>
 
-                      <!-- Title and Subtitle -->
-                      <div class="border border-red-500 border-2  mx-auto mt-4  w-[372.67px] h-[55px]">
-                      <h2 class="text-xl font-bold text-gray-800">National Emergency Number</h2>
-                        <p class="text-sm text-gray-500">National Emergency</p>
-                         </div>
+      <section id="contact-container" class=" bg-white w-[1800px] h-[1140px] 
+                                       grid grid-cols-12 gap-4 mt-12 ml-9 mb-12">
 
-                      <!-- Emergency Number -->
-                 <div class="border border-red-500 border-2  mx-auto  w-[372.67px] h-[77px]">
-                   <div class="border border-red-500 border-2 text-dark-600 text-2xl font-bold w-[372.67px] h-[36px]">
-                    <h1>999</h1></div>
-                    <div class="text-sm text-gray-600  w-[53px] h-[37px] bg-[#F2F2F2] ml-0 rounded-xl flex justify-center items-center">
-                    <p>All</p>
+    <section id="card-item" class="col-span-9">
+        <div class="box-item grid grid-cols-3 gap-4 ">
+            <div class="contact box1  w-[436.67px] h-[360px] bg-white rounded-2xl shadow-lg">
+                <!-- Emergency Icon -->
+                <div class=" flex justify-between mx-auto mt-7 w-[372.67px] h-[60px]">
+                    <div class="bg-[#FFE3E2] w-[60px] h-[60px] rounded-md flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency light icon " class="w-[32px] h-[32px]" />
                     </div>
-                 </div>
-
-             <!-- Buttons -->
-                <div class="border border-red-500 border-2  mx-auto  w-[372.67px] h-40px] mt-4 flex justify-between ">
-                  <div class=" w-[182.33px] h-[40px] bg-gray-200 flex justify-center items-center rounded-xl">
-                    <button 
-                    class=" text-gray-800 font-semibold py-2 px-4 rounded"
-                      onclick="navigator.clipboard.writeText('999')">
-                
-                     Copy
-                     </button>
-                  </div>
-                  <div class=" w-[182.33px] h-[40px ] bg-green-500 flex justify-center items-center rounded-xl">
-                    <a href="tel:999">
-                   <button class=" text-white font-semibold py-2 px-4 rounded hover:bg-green-600">
-                     Call
-                   </button>
-                    </a>
-                  </div>
-                </div>
-    
-    </div>
-  </div>
-
-                          
-
-                </section>
-                
-                    <aside id ="side-container" class="border border-red-500 border-2 bg-white col-span-3">
-                        
-    
-                    </aside>
-
-                    
-                    
-
-            </section>
-
-        <!--</div>-->
-
-        <!--<section id="contact-container" class="border border-red-500 border-2 w-[1370px] h-[1140px] mt-7
-                    grid grid-cols-12  gap-8">
-            <section id="box-container" class="col-span-9">
-
-                <div class="box-item grid grid-cols-3 gap-5">
-                    <div class="card1 bg-base-100 w-96 shadow-sm">
-                        <figure>
-                            <img
-                              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                             alt="Shoes" />
-                        </figure>
-                        <div class="card-body">
-                             <h2 class="card-title">Card Title</h2>
-                             <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                                <div class="card-actions justify-end">
-                                   <button class="btn btn-primary">Buy Now</button>
-                                </div>
+                        <div id="heart " class="flex items-center ">
+                          <i class="fa-regular fa-heart text-Gray-500 text-2xl w-[24px] h-[24px]"></i>
                         </div>
-
-                        <div class="card2 bg-base-100 w-96 shadow-sm">
-                        <figure>
-                            <img
-                              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                             alt="Shoes" />
-                        </figure>
-                        <div class="card-body">
-                             <h2 class="card-title">Card Title</h2>
-                             <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                                <div class="card-actions justify-end">
-                                   <button class="btn btn-primary">Buy Now</button>
-                                </div>
-                        </div>
-
-                        <div class="card3 bg-base-100 w-96 shadow-sm">
-                        <figure>
-                            <img
-                              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                             alt="Shoes" />
-                        </figure>
-                        <div class="card-body">
-                             <h2 class="card-title">Card Title</h2>
-                             <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                                <div class="card-actions justify-end">
-                                   <button class="btn btn-primary">Buy Now</button>
-                                </div>
-                        </div>
-
-                   </div>
-
-
-
                 </div>
 
+                <!-- Title and Subtitle -->
+                <div class=" mx-auto mt-4 w-[372.67px] h-[55px]">
+                    <h2 class="text-xl font-bold text-gray-800">National Emergency Number</h2>
+                    <p class=" text-gray-500 font-normal text-[18px] ">National Emergency</p>
+                </div>
 
-            </section>
-             <aside id ="side-container" class="bg-green-500 col-span-3">
-                
+                <!-- Emergency Number -->
+                <div class=" mx-auto w-[372.67px] h-[77px]">
+                    <div class=" text-dark-600 text-2xl font-bold w-[372.67px] h-[36px]">
+                        <h1>999</h1>
+                    </div>
+                    <div class="font-normal text-[18px] text-gray-600 w-[53px] h-[37px] bg-[#F2F2F2] ml-0 rounded-md flex justify-center items-center">
+                        <p>All</p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class=" mx-auto w-[372.67px] h-[40px] mt-4 flex justify-between">
+                    <div class="w-[182.33px] h-[40px] border border-white-500 border-2 flex justify-center items-center rounded-md">
+                        <button 
+                            class="text-gray-800 font-semibold py-2 px-4 rounded flex items-center gap-2"
+                            onclick="navigator.clipboard.writeText('999')">
+                            <div id="copy-icon" >
+                                <i class="fa-solid fa-copy"></i>
+                            </div>
+                              
+                            
+                            Copy
+                        </button>
+                    </div>
+                    <div class="w-[182.33px] h-[40px] bg-green-500 flex justify-center items-center rounded-md">
+                        <a href="tel:999">
+                            <button class="text-white font-semibold py-2 px-4 rounded hover:bg-green-600">
+                                Call
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact box2  w-[436.67px] h-[360px] bg-white rounded-2xl shadow-lg">
+                <!-- Emergency Icon -->
+                <div class=" flex justify-between mx-auto mt-7 w-[372.67px] h-[60px]">
+                    <div class="bg-[#FFE3E2] w-[60px] h-[60px] rounded-md flex justify-center items-center">
+                        <img src="assets/police.png" alt="Emergency light icon " class="w-[32px] h-[32px]" />
+                    </div>
+                     <div class="flex items-center ">
+                          <i class="fa-regular fa-heart text-Gray-500 text-2xl w-[24px] h-[24px]"></i>
+                        </div>
+                </div>
+
+                <!-- Title and Subtitle -->
+                <div class=" mx-auto mt-4 w-[372.67px] h-[55px]">
+                    <h2 class="text-xl font-bold text-gray-800">Police Helpline Number</h2>
+                    <p class="font-normal text-[18px] text-gray-500">Police</p>
+                </div>
+
+                <!-- Emergency Number -->
+                <div class=" mx-auto w-[372.67px] h-[77px]">
+                    <div class=" text-dark-600 text-2xl font-bold w-[372.67px] h-[36px]">
+                        <h1>999</h1>
+                    </div>
+                    <div class="font-normal text-[18px] text-gray-600 w-[53px] h-[37px] bg-[#F2F2F2] ml-0 rounded-md flex justify-center items-center">
+                        <p>Police</p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class=" mx-auto w-[372.67px] h-[40px] mt-4 flex justify-between">
+                    <div class="w-[182.33px] h-[40px] border border-white-500 border-2 flex justify-center items-center rounded-md">
+                        <button 
+                            class="text-gray-800 font-semibold py-2 px-4 rounded flex items-center gap-2"
+                            onclick="navigator.clipboard.writeText('999')">
+                            <div id="copy-icon" >
+                                <i class="fa-solid fa-copy"></i>
+                            </div>
+                              
+                            
+                            Copy
+                        </button>
+                    </div>
+                    <div class="w-[182.33px] h-[40px] bg-green-500 flex justify-center items-center rounded-md">
+                        <a href="tel:999">
+                            <button class="text-white font-semibold py-2 px-4 rounded hover:bg-green-600">
+                                Call
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contact box3  w-[436.67px] h-[360px] bg-white rounded-2xl shadow-lg">
+                <!-- Emergency Icon -->
+                <div class=" flex justify-between mx-auto mt-7 w-[372.67px] h-[60px]">
+                    <div class="bg-[#FFE3E2] w-[60px] h-[60px] rounded-md flex justify-center items-center">
+                        <img src="assets/fire-service.png" alt="Emergency light icon " class="w-[32px] h-[32px]" />
+                    </div>
+                     <div class="flex items-center ">
+                          <i class="fa-regular fa-heart text-Gray-500 text-2xl w-[24px] h-[24px]"></i>
+                        </div>
+                </div>
+
+                <!-- Title and Subtitle -->
+                <div class=" mx-auto mt-4 w-[372.67px] h-[55px]">
+                    <h2 class="text-xl font-bold text-gray-800">Fire Service Number</h2>
+                    <p class="font-normal text-[18px] text-gray-500">Fire Service</p>
+                </div>
+
+                <!-- Emergency Number -->
+                <div class=" mx-auto w-[372.67px] h-[77px]">
+                    <div class=" text-dark-600 text-2xl font-bold w-[372.67px] h-[36px]">
+                        <h1>999</h1>
+                    </div>
+                    <div class="font-normal text-[18px] text-gray-600 w-[53px] h-[37px] bg-[#F2F2F2] ml-0 rounded-md flex justify-center items-center">
+                        <p>Fire</p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class=" mx-auto w-[372.67px] h-[40px] mt-4 flex justify-between">
+                    <div class="w-[182.33px] h-[40px] border border-white-500 border-2 flex justify-center items-center rounded-md">
+                        <button 
+                            class="text-gray-800 font-semibold py-2 px-4 rounded flex items-center gap-2"
+                            onclick="navigator.clipboard.writeText('999')">
+                            <div id="copy-icon" >
+                                <i class="fa-solid fa-copy"></i>
+                            </div>
+                              
+                            
+                            Copy
+                        </button>
+                    </div>
+                    <div class="w-[182.33px] h-[40px] bg-green-500 flex justify-center items-center rounded-md">
+                        <a href="tel:999">
+                            <button class="text-white font-semibold py-2 px-4 rounded hover:bg-green-600">
+                                Call
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
 
-             </aside>
-        </section>-->
+            <div class="contact box4  w-[436.67px] h-[360px] bg-white rounded-2xl shadow-lg">
+                <!-- Emergency Icon -->
+                <div class=" flex justify-between mx-auto mt-7 w-[372.67px] h-[60px]">
+                    <div class="bg-[#FFE3E2] w-[60px] h-[60px] rounded-md flex justify-center items-center">
+                        <img src="assets/ambulance.png" alt="Emergency light icon " class="w-[32px] h-[32px]" />
+                    </div>
+                    <div class="flex items-center ">
+                          <i class="fa-regular fa-heart text-Gray-500 text-2xl w-[24px] h-[24px]"></i>
+                        </div>
+                </div>
+
+                <!-- Title and Subtitle -->
+                <div class=" mx-auto mt-4 w-[372.67px] h-[55px]">
+                    <h2 class="text-xl font-bold text-gray-800">Ambulance Service</h2>
+                    <p class="font-normal text-[18px] text-gray-500">Ambulance </p>
+                </div>
+
+                <!-- Emergency Number -->
+                <div class=" mx-auto w-[372.67px] h-[77px]">
+                    <div class=" text-dark-600 text-2xl font-bold w-[372.67px] h-[36px]">
+                        <h1>1994-999999</h1>
+                    </div>
+                    <div class="font-normal text-[18px] text-gray-600 w-[53px] h-[37px] bg-[#F2F2F2] ml-0 rounded-md flex justify-center items-center">
+                        <p>Health</p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class=" mx-auto w-[372.67px] h-[40px] mt-4 flex justify-between">
+                    <div class="w-[182.33px] h-[40px] border border-white-500 border-2 flex justify-center items-center rounded-md">
+                        <button 
+                            class="text-gray-800 font-semibold py-2 px-4 rounded flex items-center gap-2"
+                            onclick="navigator.clipboard.writeText('999')">
+                            <div id="copy-icon" >
+                                <i class="fa-solid fa-copy"></i>
+                            </div>
+                              
+                            
+                            Copy
+                        </button>
+                    </div>
+                    <div class="w-[182.33px] h-[40px] bg-green-500 flex justify-center items-center rounded-md">
+                        <a href="tel:999">
+                            <button class="text-white font-semibold py-2 px-4 rounded hover:bg-green-600">
+                                Call
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
 
+            <div class="contact box5  w-[436.67px] h-[360px] bg-white rounded-2xl shadow-lg">
+                <!-- Emergency Icon -->
+                <div class=" flex justify-between mx-auto mt-7 w-[372.67px] h-[60px]">
+                    <div class="bg-[#FFE3E2] w-[60px] h-[60px] rounded-md flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency light icon " class="w-[32px] h-[32px]" />
+                    </div>
+                     <div class="flex items-center ">
+                          <i class="fa-regular fa-heart text-Gray-500 text-2xl w-[24px] h-[24px]"></i>
+                        </div>
+                </div>
+
+                <!-- Title and Subtitle -->
+                <div class=" mx-auto mt-4 w-[372.67px] h-[55px]">
+                    <h2 class="text-xl font-bold text-gray-800">Women & Child Helpline</h2>
+                    <p class="font-normal text-[18px] text-gray-500">Women & Child Helpline</p>
+                </div>
+
+                <!-- Emergency Number -->
+                <div class=" mx-auto w-[372.67px] h-[77px]">
+                    <div class=" text-dark-600 text-2xl font-bold w-[372.67px] h-[36px]">
+                        <h1>109</h1>
+                    </div>
+                    <div class="font-normal text-[18px] text-gray-600 w-[53px] h-[37px] bg-[#F2F2F2] ml-0 rounded-md flex justify-center items-center">
+                        <p>Help</p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class=" mx-auto w-[372.67px] h-[40px] mt-4 flex justify-between">
+                    <div class="w-[182.33px] h-[40px] border border-white-500 border-2 flex justify-center items-center rounded-md">
+                        <button 
+                            class="text-gray-800 font-semibold py-2 px-4 rounded flex items-center gap-2"
+                            onclick="navigator.clipboard.writeText('999')">
+                            <div id="copy-icon" >
+                                <i class="fa-solid fa-copy"></i>
+                            </div>
+                              
+                            
+                            Copy
+                        </button>
+                    </div>
+                    <div class="w-[182.33px] h-[40px] bg-green-500 flex justify-center items-center rounded-md">
+                        <a href="tel:999">
+                            <button class="text-white font-semibold py-2 px-4 rounded hover:bg-green-600">
+                                Call
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contact box6  w-[436.67px] h-[360px] bg-white rounded-2xl shadow-lg">
+                <!-- Emergency Icon -->
+                <div class=" flex justify-between mx-auto mt-7 w-[372.67px] h-[60px]">
+                    <div class="bg-[#FFE3E2] w-[60px] h-[60px] rounded-md flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency light icon " class="w-[32px] h-[32px]" />
+                    </div>
+                    <div class="flex items-center ">
+                          <i class="fa-regular fa-heart text-Gray-500 text-2xl w-[24px] h-[24px]"></i>
+                        </div>
+                </div>
+
+                <!-- Title and Subtitle -->
+                <div class=" mx-auto mt-4 w-[372.67px] h-[55px]">
+                    <h2 class="text-xl font-bold text-gray-800">Anti-Corruption Helpline</h2>
+                    <p class="font-normal text-[18px] text-gray-500">Anti-Corruption</p>
+                </div>
+
+                <!-- Emergency Number -->
+                <div class=" mx-auto w-[372.67px] h-[77px]">
+                    <div class=" text-dark-600 text-2xl font-bold w-[372.67px] h-[36px]">
+                        <h1>106</h1>
+                    </div>
+                    <div class="font-normal text-[18px] text-gray-600 w-[53px] h-[37px] bg-[#F2F2F2] ml-0 rounded-md flex justify-center items-center">
+                        <p>Govt.</p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class=" mx-auto w-[372.67px] h-[40px] mt-4 flex justify-between">
+                    <div class="w-[182.33px] h-[40px] border border-white-500 border-2 flex justify-center items-center rounded-md">
+                        <button 
+                            class="text-gray-800 font-semibold py-2 px-4 rounded flex items-center gap-2"
+                            onclick="navigator.clipboard.writeText('999')">
+                            <div id="copy-icon" >
+                                <i class="fa-solid fa-copy"></i>
+                            </div>
+                              
+                            
+                            Copy
+                        </button>
+                    </div>
+                    <div class="w-[182.33px] h-[40px] bg-green-500 flex justify-center items-center rounded-md">
+                        <a href="tel:999">
+                            <button class="text-white font-semibold py-2 px-4 rounded hover:bg-green-600">
+                                Call
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
 
+            <div class="contact box7  w-[436.67px] h-[360px] bg-white rounded-2xl shadow-lg">
+                <!-- Emergency Icon -->
+                <div class=" flex justify-between mx-auto mt-7 w-[372.67px] h-[60px]">
+                    <div class="bg-[#FFE3E2] w-[60px] h-[60px] rounded-md flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency light icon " class="w-[32px] h-[32px]" />
+                    </div>
+                     <div class="flex items-center ">
+                          <i class="fa-regular fa-heart text-Gray-500 text-2xl w-[24px] h-[24px]"></i>
+                        </div>
+                </div>
+
+                <!-- Title and Subtitle -->
+                <div class=" mx-auto mt-4 w-[372.67px] h-[55px]">
+                    <h2 class="text-xl font-bold text-gray-800">Electricity Helpline</h2>
+                    <p class="font-normal text-[18px] text-gray-500">Electricity Outage</p>
+                </div>
+
+                <!-- Emergency Number -->
+                <div class=" mx-auto w-[372.67px] h-[77px]">
+                    <div class=" text-dark-600 text-2xl font-bold w-[372.67px] h-[36px]">
+                        <h1>16216</h1>
+                    </div>
+                    <div class="font-normal text-[18px] text-gray-600 w-[109px] h-[37px] bg-[#F2F2F2] ml-0 rounded-md flex justify-center items-center">
+                        <p>Electricity</p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class=" mx-auto w-[372.67px] h-[40px] mt-4 flex justify-between">
+                    <div class="w-[182.33px] h-[40px] border border-white-500 border-2 flex justify-center items-center rounded-md">
+                        <button 
+                            class="text-gray-800 font-semibold py-2 px-4 rounded flex items-center gap-2"
+                            onclick="navigator.clipboard.writeText('999')">
+                            <div id="copy-icon" >
+                                <i class="fa-solid fa-copy"></i>
+                            </div>
+                              
+                            
+                            Copy
+                        </button>
+                    </div>
+                    <div class="w-[182.33px] h-[40px] bg-green-500 flex justify-center items-center rounded-md">
+                        <a href="tel:999">
+                            <button class="text-white font-semibold py-2 px-4 rounded hover:bg-green-600">
+                                Call
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
 
+            <div class="contact box8  w-[436.67px] h-[360px] bg-white rounded-2xl shadow-lg">
+                <!-- Emergency Icon -->
+                <div class=" flex justify-between mx-auto mt-7 w-[372.67px] h-[60px]">
+                    <div class="bg-[#FFE3E2] w-[60px] h-[60px] rounded-md flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency light icon " class="w-[32px] h-[32px]" />
+                    </div>
+                     <div class="flex items-center ">
+                          <i class="fa-regular fa-heart text-Gray-500 text-2xl w-[24px] h-[24px]"></i>
+                        </div>
+                </div>
+
+                <!-- Title and Subtitle -->
+                <div class=" mx-auto mt-4 w-[372.67px] h-[55px]">
+                    <h2 class="text-xl font-bold text-gray-800">Brac Helpline</h2>
+                    <p class="font-normal text-[18px] text-gray-500">Brac</p>
+                </div>
+
+                <!-- Emergency Number -->
+                <div class=" mx-auto w-[372.67px] h-[77px]">
+                    <div class=" text-dark-600 text-2xl font-bold w-[372.67px] h-[36px]">
+                        <h1>16445</h1>
+                    </div>
+                    <div class="font-normal text-[18px] text-gray-600 w-[53px] h-[37px] bg-[#F2F2F2] ml-0 rounded-md flex justify-center items-center">
+                        <p>NGO</p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class=" mx-auto w-[372.67px] h-[40px] mt-4 flex justify-between">
+                    <div class="w-[182.33px] h-[40px] border border-white-500 border-2 flex justify-center items-center rounded-md">
+                        <button 
+                            class="text-gray-800 font-semibold py-2 px-4 rounded flex items-center gap-2"
+                            onclick="navigator.clipboard.writeText('999')">
+                            <div id="copy-icon" >
+                                <i class="fa-solid fa-copy"></i>
+                            </div>
+                              
+                            
+                            Copy
+                        </button>
+                    </div>
+                    <div class="w-[182.33px] h-[40px] bg-green-500 flex justify-center items-center rounded-md">
+                        <a href="tel:999">
+                            <button class="text-white font-semibold py-2 px-4 rounded hover:bg-green-600">
+                                Call
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
 
+            <div class="contact box9  w-[436.67px] h-[360px] bg-white rounded-2xl shadow-lg">
+                <!-- Emergency Icon -->
+                <div class=" flex justify-between mx-auto mt-7 w-[372.67px] h-[60px]">
+                    <div class="bg-[#FFE3E2] w-[60px] h-[60px] rounded-md flex justify-center items-center">
+                        <img src="assets/emergency.png" alt="Emergency light icon " class="w-[32px] h-[32px]" />
+                    </div>
+                    <div class="flex items-center ">
+                          <i class="fa-regular fa-heart text-Gray-500 text-2xl w-[24px] h-[24px]"></i>
+                        </div>
+                </div>
+
+                <!-- Title and Subtitle -->
+                <div class=" mx-auto mt-4 w-[372.67px] h-[55px]">
+                    <h2 class="text-xl font-bold text-gray-800">Bangladesh Railway Helpline </h2>
+                    <p class="font-normal text-[18px] text-gray-500">Bangladesh Railway</p>
+                </div>
+
+                <!-- Emergency Number -->
+                <div class=" mx-auto w-[372.67px] h-[77px]">
+                    <div class=" text-dark-600 text-2xl font-bold w-[372.67px] h-[36px]">
+                        <h1>163</h1>
+                    </div>
+                    <div class="font-normal text-[18px] text-gray-600 w-[53px] h-[37px] bg-[#F2F2F2] ml-0 rounded-md flex justify-center items-center">
+                        <p>Travel</p>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class=" mx-auto w-[372.67px] h-[40px] mt-4 flex justify-between">
+                    <div class="w-[182.33px] h-[40px] border border-white-500 border-2 flex justify-center items-center rounded-md">
+                        <button 
+                            class="text-gray-800 font-semibold py-2 px-4 rounded flex items-center gap-2"
+                            onclick="navigator.clipboard.writeText('999')">
+                            <div id="copy-icon" >
+                                <i class="fa-solid fa-copy"></i>
+                            </div>
+                              
+                            
+                            Copy
+                        </button>
+                    </div>
+                    <div class="w-[182.33px] h-[40px] bg-green-500 flex justify-center items-center rounded-md">
+                        <a href="tel:999">
+                            <button class="text-white font-semibold py-2 px-4 rounded hover:bg-green-600">
+                                Call
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
 
+        </div>
+    </section>
 
+    <aside id="side-container" class="w-[400px] h-[1112px] bg-white col-span-3  bg-white rounded-2xl shadow-lg">
+        <!-- Side content here -->
+         <div class=" w-[352px] h-[52px] mt-5 mx-auto 
+                     flex justify-between ">
+              <div class=" w-[136px] h-[28px] mt-2 flex items-center gap-2">
+                <i class="fa-regular fa-clock"></i>
+                <h1 class=" text-lg font-bold text-gray-800 w-[104px] h-[28px]">Call History</h1>
+                   
+              </div>
+ 
 
+               <div class="">
+                <button class="text-white font-semibold py-2 px-4 rounded-full bg-[#00A63E] w-[114px] h-[52px]">
+                                Clear
+                            </button>
+                   
+              </div>
 
+         </div>
+    </aside>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-       
+</section>    
      </main>
+
+     <script src="javascript.js"></script>
         
 </body> 
 </html>
